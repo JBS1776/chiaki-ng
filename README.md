@@ -1,3 +1,6 @@
+# Notes from JBS1776
+
+This is a separate fork of chiaki-ng that is meant to be used in conjunction with the original chiaki app.  This is meant for if you are using a PS4 and PS5 simultaneously via port forwarding.  You can download this fork to have the client send requests to the home IP at different ports since the PS4 and PS5 use the same ports for remote play.  The port forwardings needed to work are homeIP:1987/udp -> ps5ip:987/udp, homeIP:19295-19302/tcp/udp -> ps5ip:9295-9302/tcp/udp.  Since the homeIP and ps5ip listen at different port ranges, you may need to configure individual ports rather than specify port ranges to get this to work.  I have tested this app with my router and it has tested working.  Everything else about this project is identical to the original and props to the developers.
 
 ![chiaki-ng Logo](gui/res/chiaking-logo.svg)
 
